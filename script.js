@@ -34,11 +34,11 @@ Hour9.innerHTML = moment().set({"hour": 9, "minute": 0}).format('hh:mm A');
 Hour10.innerHTML = moment().set({"hour": 10, "minute": 0}).format('hh:mm A');
 Hour11.innerHTML = moment().set({"hour": 11, "minute": 0}).format('hh:mm A');
 Hour12.innerHTML = moment().set({"hour": 12, "minute": 0}).format('hh:mm A');
-Hour1.innerHTML = moment().set({"hour": 1, "minute": 0}).format('hh:mm A');
-Hour2.innerHTML = moment().set({"hour": 2, "minute": 0}).format('hh:mm A');
-Hour3.innerHTML = moment().set({"hour": 3, "minute": 0}).format('hh:mm A');
-Hour4.innerHTML = moment().set({"hour": 4, "minute": 0}).format('hh:mm A');
-Hour5.innerHTML = moment().set({"hour": 5, "minute": 0}).format('hh:mm A');
+Hour1.innerHTML = moment().set({"hour": 13, "minute": 0}).format('hh:mm A');
+Hour2.innerHTML = moment().set({"hour": 14, "minute": 0}).format('hh:mm A');
+Hour3.innerHTML = moment().set({"hour": 15, "minute": 0}).format('hh:mm A');
+Hour4.innerHTML = moment().set({"hour": 16, "minute": 0}).format('hh:mm A');
+Hour5.innerHTML = moment().set({"hour": 17, "minute": 0}).format('hh:mm A');
 
 
 
@@ -81,8 +81,7 @@ function SaveInput5(){
 Save5.addEventListener("click", SaveInput5);
 
 function SaveInput6(){
-    localStorage.setItem("input6" , scheduale6.innerHTML);
-    console.log (scheduale6.innerHTML);    
+    localStorage.setItem("input6" , scheduale6.innerHTML); 
 }
 Save6.addEventListener("click", SaveInput6);
 
@@ -124,11 +123,102 @@ main.onload = displayUserSceduale();
 
 
 
-
-
-
-
 //set past/presant/future
+
+function pastOrPresent (){
+    if (Hour9 === today) {
+        scheduale.setAttribute("class", "col-10 present");
+
+    } else if (Hour9 <= today) {
+        scheduale.setAttribute("class", "col-10 past");
+
+    } else (Hour9 >= today); {
+        scheduale.setAttribute("class", "col-10 future");
+    };
+
+    if (Hour10 === today) {
+        scheduale1.setAttribute("class", "col-10 present");
+
+    } else if (Hour10 <= today) {
+        scheduale1.setAttribute("class", "col-10 past");
+
+    } else (Hour10 >= today); {
+        scheduale1.setAttribute("class", "col-10 future");
+    };
+
+    if (Hour11 === today) {
+        scheduale2.setAttribute("class", "col-10 present");
+
+    } else if (Hour11 <= today) {
+        scheduale2.setAttribute("class", "col-10 past");
+
+    } else (Hour11 >= today); {
+        scheduale2.setAttribute("class", "col-10 future");
+    };
+
+    if (Hour12 === today) {
+        scheduale3.setAttribute("class", "col-10 present");
+
+    } else if (Hour12 <= today) {
+        scheduale3.setAttribute("class", "col-10 past");
+
+    } else (Hour12 >= today); {
+        scheduale3.setAttribute("class", "col-10 future");
+    };
+
+    if (Hour1 === today) {
+        scheduale4.setAttribute("class", "col-10 present");
+
+    } else if (Hour1 <= today) {
+        scheduale4.setAttribute("class", "col-10 past");
+
+    } else (Hour1 >= today); {
+        scheduale4.setAttribute("class", "col-10 future");
+    };
+
+    if (Hour2 === today) {
+        scheduale5.setAttribute("class", "col-10 present");
+
+    } else if (Hour2 <= today) {
+        scheduale5.setAttribute("class", "col-10 past");
+
+    } else (Hour2 >= today); {
+        scheduale5.setAttribute("class", "col-10 future");
+    };
+
+    if (Hour3 === today) {
+        scheduale6.setAttribute("class", "col-10 present");
+
+    } else if (Hour3 <= today) {
+        scheduale6.setAttribute("class", "col-10 past");
+
+    } else (Hour3 >= today); {
+        scheduale6.setAttribute("class", "col-10 future");
+    };
+
+    if (Hour4 === today) {
+        scheduale7.setAttribute("class", "col-10 present");
+
+    } else if (Hour4 <= today) {
+        scheduale7.setAttribute("class", "col-10 past");
+
+    } else (Hour4 >= today); {
+        scheduale7.setAttribute("class", "col-10 future");
+    };
+
+    if (Hour5 === today) {
+        scheduale8.setAttribute("class", "col-10 present");
+
+    } else if (Hour5 <= today) {
+        scheduale8.setAttribute("class", "col-10 past");
+
+    } else (Hour5 >= today); {
+        scheduale8.setAttribute("class", "col-10 future");
+    };
+    
+};
+
+pastOrPresent();
 
 
 
