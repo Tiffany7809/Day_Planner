@@ -19,26 +19,33 @@ var Save5 = document.getElementById("save5");
 var Save6 = document.getElementById("save6");
 var Save7 = document.getElementById("save7");
 var Save8 = document.getElementById("save8");
-var time = document.getElementsByClassName("#hour")
+
+//Time Blocks
+var Hour9 = document.getElementById("hour");
+var Hour10 = document.getElementById("hour1");
+var Hour11 = document.getElementById("hour2");
+var Hour12 = document.getElementById("hour3");
+var Hour1 = document.getElementById("hour4");
+var Hour2 = document.getElementById("hour5");
+var Hour3 = document.getElementById("hour6");
+var Hour4 = document.getElementById("hour7");
+var Hour5 = document.getElementById("hour8");
+Hour9.innerHTML = moment().set({"hour": 9, "minute": 0}).format('hh:mm A');
+Hour10.innerHTML = moment().set({"hour": 10, "minute": 0}).format('hh:mm A');
+Hour11.innerHTML = moment().set({"hour": 11, "minute": 0}).format('hh:mm A');
+Hour12.innerHTML = moment().set({"hour": 12, "minute": 0}).format('hh:mm A');
+Hour1.innerHTML = moment().set({"hour": 1, "minute": 0}).format('hh:mm A');
+Hour2.innerHTML = moment().set({"hour": 2, "minute": 0}).format('hh:mm A');
+Hour3.innerHTML = moment().set({"hour": 3, "minute": 0}).format('hh:mm A');
+Hour4.innerHTML = moment().set({"hour": 4, "minute": 0}).format('hh:mm A');
+Hour5.innerHTML = moment().set({"hour": 5, "minute": 0}).format('hh:mm A');
+
 
 
 //setting current date
 var today = moment();
-$("#currentDay").text(today.format("MMM Do, YYYY"));
+$("#currentDay").text(today.format("MMM Do, YYYY hh:mm a"));
 
-
- //time slots
-var TimeSlot = [moment().hour(9),moment().hour(10),moment().hour(11), moment().hour(12), moment().hour(1), moment().hour(2), moment().hour(3),
-    moment().hour(4), moment().hour(5)
-  ];
-
-
-for (let i = 0; i < TimeSlot.length; i++) {
-    time.textContent += time[i];}
-
-
-//set time-blocks 
-console.log(TimeSlot);
 
  
 
