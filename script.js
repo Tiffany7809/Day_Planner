@@ -30,17 +30,17 @@ var Hour2 = document.getElementById("hour5");
 var Hour3 = document.getElementById("hour6");
 var Hour4 = document.getElementById("hour7");
 var Hour5 = document.getElementById("hour8");
-Hour9.innerHTML = moment().set({"hour": 9, "minute": 0}).format('hh:mm A');
-Hour10.innerHTML = moment().set({"hour": 10, "minute": 0}).format('hh:mm A');
-Hour11.innerHTML = moment().set({"hour": 11, "minute": 0}).format('hh:mm A');
-Hour12.innerHTML = moment().set({"hour": 12, "minute": 0}).format('hh:mm A');
-Hour1.innerHTML = moment().set({"hour": 13, "minute": 0}).format('hh:mm A');
-Hour2.innerHTML = moment().set({"hour": 14, "minute": 0}).format('hh:mm A');
-Hour3.innerHTML = moment().set({"hour": 15, "minute": 0}).format('hh:mm A');
-Hour4.innerHTML = moment().set({"hour": 16, "minute": 0}).format('hh:mm A');
-Hour5.innerHTML = moment().set({"hour": 17, "minute": 0}).format('hh:mm A');
+Hour9.innerHTML = moment().set({"hour": 9, "minute": 0}).format('hh:mm a');
+Hour10.innerHTML = moment().set({"hour": 10, "minute": 0}).format('hh:mm a');
+Hour11.innerHTML = moment().set({"hour": 11, "minute": 0}).format('hh:mm a');
+Hour12.innerHTML = moment().set({"hour": 12, "minute": 0}).format('hh:mm a');
+Hour1.innerHTML = moment().set({"hour": 13, "minute": 0}).format('hh:mm a');
+Hour2.innerHTML = moment().set({"hour": 14, "minute": 0}).format('hh:mm a');
+Hour3.innerHTML = moment().set({"hour": 15, "minute": 0}).format('hh:mm a');
+Hour4.innerHTML = moment().set({"hour": 16, "minute": 0}).format('hh:mm a');
+Hour5.innerHTML = moment().set({"hour": 17, "minute": 0}).format('hh:mm a');
 
-
+// Hour9.innerHTML=moment().hour(9).format()
 
 //setting current date
 var today = moment();
@@ -124,99 +124,105 @@ main.onload = displayUserSceduale();
 
 
 //set past/presant/future
+var timeNow = moment().format("hh:mm a");
+
+console.log(Hour9.innerHTML)
+console.log (timeNow)
 
 function pastOrPresent (){
-    if (Hour9 === today) {
+    if (Hour9.innerHTML === timeNow) {
         scheduale.setAttribute("class", "col-10 present");
 
-    } else if (Hour9 <= today) {
+    } else if (Hour9.innerHTML <= timeNow) {
         scheduale.setAttribute("class", "col-10 past");
 
-    } else (Hour9 >= today); {
+    } else {
         scheduale.setAttribute("class", "col-10 future");
     };
 
-    if (Hour10 === today) {
+    if (Hour10.innerHTML === today) {
         scheduale1.setAttribute("class", "col-10 present");
 
-    } else if (Hour10 <= today) {
+    } else if (Hour10.innerHTML < today) {
         scheduale1.setAttribute("class", "col-10 past");
 
-    } else (Hour10 >= today); {
+    } else  {
         scheduale1.setAttribute("class", "col-10 future");
     };
 
-    if (Hour11 === today) {
+    if (Hour11.innerHTML === today) {
         scheduale2.setAttribute("class", "col-10 present");
 
-    } else if (Hour11 <= today) {
+    } else if (Hour11.innerHTML < today) {
         scheduale2.setAttribute("class", "col-10 past");
 
-    } else (Hour11 >= today); {
+    } else {
         scheduale2.setAttribute("class", "col-10 future");
     };
 
-    if (Hour12 === today) {
+    if (Hour12.innerHTML === today) {
         scheduale3.setAttribute("class", "col-10 present");
 
-    } else if (Hour12 <= today) {
+    } else if (Hour12.innerHTML < today) {
         scheduale3.setAttribute("class", "col-10 past");
 
-    } else (Hour12 >= today); {
+    } else {
         scheduale3.setAttribute("class", "col-10 future");
     };
 
-    if (Hour1 === today) {
+    if (Hour1.innerHTML === today) {
         scheduale4.setAttribute("class", "col-10 present");
 
-    } else if (Hour1 <= today) {
+    } else if (Hour1.innerHTML < today) {
         scheduale4.setAttribute("class", "col-10 past");
 
-    } else (Hour1 >= today); {
+    } else  {
         scheduale4.setAttribute("class", "col-10 future");
     };
 
-    if (Hour2 === today) {
+    if (Hour2.innerHTML === today) {
         scheduale5.setAttribute("class", "col-10 present");
 
-    } else if (Hour2 <= today) {
+    } else if (Hour2.innerHTML < today) {
         scheduale5.setAttribute("class", "col-10 past");
 
-    } else (Hour2 >= today); {
+    } else {
         scheduale5.setAttribute("class", "col-10 future");
     };
 
-    if (Hour3 === today) {
+    if (Hour3.innerHTML === today) {
         scheduale6.setAttribute("class", "col-10 present");
 
-    } else if (Hour3 <= today) {
+    } else if (Hour3.innerHTML < today) {
         scheduale6.setAttribute("class", "col-10 past");
 
-    } else (Hour3 >= today); {
+    } else  {
         scheduale6.setAttribute("class", "col-10 future");
     };
 
-    if (Hour4 === today) {
+    if (Hour4.innerHTML === today) {
         scheduale7.setAttribute("class", "col-10 present");
 
-    } else if (Hour4 <= today) {
+    } else if (Hour4.innerHTML < today) {
         scheduale7.setAttribute("class", "col-10 past");
 
-    } else (Hour4 >= today); {
+    } else  {
         scheduale7.setAttribute("class", "col-10 future");
     };
 
-    if (Hour5 === today) {
+    if (Hour5.innerHTML === today) {
         scheduale8.setAttribute("class", "col-10 present");
 
-    } else if (Hour5 <= today) {
+    } else if (Hour5.innerHTML < today) {
         scheduale8.setAttribute("class", "col-10 past");
 
-    } else (Hour5 >= today); {
+    } else  {
         scheduale8.setAttribute("class", "col-10 future");
     };
     
 };
+
+
 
 pastOrPresent();
 
