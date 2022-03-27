@@ -18,4 +18,4 @@ https://tiffany7809.github.io/Day_Planner/
 
 
 
- 
+ ![Screenshot (12)](https://user-images.githubusercontent.com/97773921/160266957-0c1fa056-68c8-447e-8c63-91a632c87e4c.png)
