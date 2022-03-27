@@ -14,6 +14,8 @@ each time bloack will have its own save button.
 when the user clicks the save button, the users input will be saved to the local storage.
  
 
- https://github.com/Tiffany7809/Code_Quiz
+https://tiffany7809.github.io/Day_Planner/
+
+
 
  
