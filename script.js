@@ -140,80 +140,80 @@ function pastOrPresent (){
         scheduale.setAttribute("class", "col-10 future");
     };
 
-    if (Hour10.innerHTML === today) {
+    if (Hour10.innerHTML === timeNow) {
         scheduale1.setAttribute("class", "col-10 present");
 
-    } else if (Hour10.innerHTML < today) {
+    } else if (Hour10.innerHTML <= timeNow) {
         scheduale1.setAttribute("class", "col-10 past");
 
     } else  {
         scheduale1.setAttribute("class", "col-10 future");
     };
 
-    if (Hour11.innerHTML === today) {
+    if (Hour11.innerHTML === timeNow) {
         scheduale2.setAttribute("class", "col-10 present");
 
-    } else if (Hour11.innerHTML < today) {
+    } else if (Hour11.innerHTML <= timeNow) {
         scheduale2.setAttribute("class", "col-10 past");
 
     } else {
         scheduale2.setAttribute("class", "col-10 future");
     };
 
-    if (Hour12.innerHTML === today) {
+    if (Hour12.innerHTML === timeNow) {
         scheduale3.setAttribute("class", "col-10 present");
 
-    } else if (Hour12.innerHTML < today) {
+    } else if (Hour12.innerHTML <= timeNow) {
         scheduale3.setAttribute("class", "col-10 past");
 
     } else {
         scheduale3.setAttribute("class", "col-10 future");
     };
 
-    if (Hour1.innerHTML === today) {
+    if (Hour1.innerHTML === timeNow) {
         scheduale4.setAttribute("class", "col-10 present");
 
-    } else if (Hour1.innerHTML < today) {
+    } else if (Hour1.innerHTML <= timeNow) {
         scheduale4.setAttribute("class", "col-10 past");
 
     } else  {
         scheduale4.setAttribute("class", "col-10 future");
     };
 
-    if (Hour2.innerHTML === today) {
+    if (Hour2.innerHTML === timeNow) {
         scheduale5.setAttribute("class", "col-10 present");
 
-    } else if (Hour2.innerHTML < today) {
+    } else if (Hour2.innerHTML <= timeNow) {
         scheduale5.setAttribute("class", "col-10 past");
 
     } else {
         scheduale5.setAttribute("class", "col-10 future");
     };
 
-    if (Hour3.innerHTML === today) {
+    if (Hour3.innerHTML === timeNow) {
         scheduale6.setAttribute("class", "col-10 present");
 
-    } else if (Hour3.innerHTML < today) {
+    } else if (Hour3.innerHTML <= timeNow) {
         scheduale6.setAttribute("class", "col-10 past");
 
     } else  {
         scheduale6.setAttribute("class", "col-10 future");
     };
 
-    if (Hour4.innerHTML === today) {
+    if (Hour4.innerHTML === timeNow) {
         scheduale7.setAttribute("class", "col-10 present");
 
-    } else if (Hour4.innerHTML < today) {
+    } else if (Hour4.innerHTML <= timeNow) {
         scheduale7.setAttribute("class", "col-10 past");
 
     } else  {
         scheduale7.setAttribute("class", "col-10 future");
     };
 
-    if (Hour5.innerHTML === today) {
+    if (Hour5.innerHTML === timeNow) {
         scheduale8.setAttribute("class", "col-10 present");
 
-    } else if (Hour5.innerHTML < today) {
+    } else if (Hour5.innerHTML <= timeNow) {
         scheduale8.setAttribute("class", "col-10 past");
 
     } else  {
@@ -221,7 +221,6 @@ function pastOrPresent (){
     };
     
 };
-
 
 
 pastOrPresent();
